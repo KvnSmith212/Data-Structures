@@ -12,6 +12,6 @@ NOTE: ~ besides a file means it is not yet finished
 
 I. Linked Lists
 
-  a. list.c ~
+    a. list.c ~
   
-  b. list.h ~
+    b. list.h ~
