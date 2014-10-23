@@ -11,5 +11,7 @@ Programming Interviews Exposed (PIX)
 NOTE: ~ besides a file means it is not yet finished
 
 I. Linked Lists
+
   a. list.c ~
+  
   b. list.h ~
