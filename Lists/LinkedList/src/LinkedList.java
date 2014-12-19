@@ -26,7 +26,7 @@ public class LinkedList<E> {
     }
 
     /**
-     * Remove the node with the desired element from the list.
+     * Remove the first found node with the desired element from the list.
      *
      * @param e
      *      Generic element to be removed from the list.
@@ -37,8 +37,11 @@ public class LinkedList<E> {
         Node<E> curr = head;
         E temp;
 
+        if (head == null){
+            return null;
+        }
         //Because we only have a next pointer and we must fix the pointers to remove the desired element, we must search from one node behind. This results in head being left out, so we check that first as an edge case.
-        if (curr.getValue().equals(e)){
+        else if (curr.getValue().equals(e)){
             temp = curr.getValue();
             head = curr.getNext();
 
@@ -73,7 +76,7 @@ public class LinkedList<E> {
      *      The value at the specified index.
      */
     public E valueAt(int index){
-        if (index >= size){
+        if (index >= size || index < 0){
             return null;
         }
         else {
@@ -109,5 +112,15 @@ public class LinkedList<E> {
         }
 
         return s;
+    }
+
+    /**
+     * Returns the size of the linked list. ie how many nodes it contains.
+     *
+     * @return
+     *      an integer representing the size of the list.
+     */
+    public int sizeOf(){
+        return size;
     }
 }
