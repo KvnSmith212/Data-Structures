@@ -6,7 +6,7 @@ public class Node<E> {
     private E value;
     private Node<E> next;
 
-    public Node(E e){
+    public Node(E e) {
         value = e;
         next = null;
     }
