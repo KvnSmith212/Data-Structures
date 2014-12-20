@@ -10,8 +10,7 @@ Programming Interviews Exposed
 
 NOTE: ~ besides a file means it is not yet finished
 
-Category | Data Structure
-----------------------------------------------
-Lists | Singularly Linked List
----------------------------------------------
-| Stack
+Category 	| Data Structure
+----------------|------------------------------
+Lists 		| Singularly Linked List
+				| Stack
